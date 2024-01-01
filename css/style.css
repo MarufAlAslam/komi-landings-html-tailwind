@@ -81,3 +81,9 @@ h3{
     line-height: 12px;
     display: inline-flex;
 }
+
+.logo img{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
