@@ -87,3 +87,13 @@ h3{
     width: auto;
     object-fit: contain;
 }
+
+.unlock{
+  border: 2px solid #e3f331;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
