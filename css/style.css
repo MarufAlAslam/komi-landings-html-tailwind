@@ -1,5 +1,6 @@
 * {
   font-family: "Barlow", sans-serif;
+  line-height: 1.4;
 }
 
 body,
@@ -54,4 +55,8 @@ h1 {
 
 .lh-30 {
   line-height: 30px;
+}
+
+h3{
+    line-height: 27px;
 }
