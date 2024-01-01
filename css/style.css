@@ -43,3 +43,15 @@ html {
   border: unset;
   border-radius: 30px;
 }
+
+.btn-lime:hover {
+  background-color: #eaf664;
+}
+
+h1 {
+  line-height: 54px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
