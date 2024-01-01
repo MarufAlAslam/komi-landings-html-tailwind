@@ -125,3 +125,22 @@ h3 {
   left: 0;
   top: 25px;
 }
+
+.large-marquee {
+  min-width: 240px;
+  width: 240px;
+}
+
+#continious-marquee {
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

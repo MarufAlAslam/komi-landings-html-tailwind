@@ -18,3 +18,10 @@ $(".fade-slider").slick({
   autoplay: true,
   autoplaySpeed: 4000,
 });
+
+const continuousMarquee = document.getElementById("continious-marquee");
+
+// make continious marquee
+setInterval(() => {
+  continuousMarquee.scrollLeft += 1;
+}, 10);
