@@ -1,0 +1,45 @@
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.repro {
+  font-family: "ABC Repro", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sticky-header {
+  background-color: rgba(0, 0, 0, 0.27);
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.text-lime {
+  color: #e3f331;
+}
+
+.bg-lime {
+  background-color: #e3f331;
+}
+
+.btn-lime {
+  background-color: #e3f331;
+  color: black;
+  padding: 12px 48px;
+  border: unset;
+  border-radius: 30px;
+}
