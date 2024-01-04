@@ -45,8 +45,9 @@ html {
   border-radius: 30px;
 }
 
-.logo-main{
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+.logo-main {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg)
+    brightness(100%) contrast(100%);
 }
 
 .btn-lime:hover {
@@ -146,5 +147,46 @@ h3 {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sticky-header {
+    background-color: black;
+  }
+  .menu {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    background-color: #404040;
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    flex-direction: column;
+    display: none !important;
+  }
+
+  .menu.active {
+    display: flex !important;
+  }
+  .text-\[48px\] {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .text-\[26px\] {
+    font-size: 20px;
+  }
+  .text-\[32px\] {
+    font-size: 25px;
+  }
+  .has-line::after{
+    display: none;
+  }
+
+  .header{
+    z-index: 1000;
   }
 }

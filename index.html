@@ -44,12 +44,20 @@
     <!-- header -->
     <header class="header sticky-header py-4" id="header">
       <div class="container">
-        <nav class="flex justify-between items-center">
-          <a href="./">
-            <img src="./img/logo.png" class="logo-main w-[150px]" alt="" />
-          </a>
+        <nav class="flex lg:flex-row flex-col justify-between lg:items-center">
+          <div class="flex items-center gap-4">
+            <button
+              class="btn text-2xl menu-toggler text-white lg:hidden block"
+              id="menu-toggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="./">
+              <img src="./img/logo.png" class="logo-main w-[150px]" alt="" />
+            </a>
+          </div>
 
-          <div class="menu flex justify-end items-center gap-8">
+          <div id="menu" class="menu flex justify-end items-center gap-8">
             <a href="" class="text-white text-sm font-bold repro uppercase"
               >HOME</a
             >
@@ -73,7 +81,9 @@
             <a href="" class="text-lime text-sm font-bold repro uppercase"
               >Log in</a
             >
-            <a href="" class="btn btn-lime text-sm font-bold repro uppercase"
+            <a
+              href=""
+              class="btn btn-lime text-sm font-bold repro uppercase lg:block hidden"
               >Start Free Trial</a
             >
           </div>
@@ -130,16 +140,16 @@
     <!-- steps -->
     <section class="steps py-10">
       <div class="container">
-        <h2 class="text-white text-center text-[32px] font-bold mb-10">
+        <h2 class="text-white text-center md:text-[32px] text-[25px] font-bold mb-10">
           Launch your link in bio in 3 simple steps
         </h2>
 
-        <div class="grid grid-cols-3 gap-[32px] has-line relative">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-[32px] has-line relative">
           <div
             class="item relative z-20 flex flex-col justify-center items-center text-center"
           >
             <div class="stepnumber">1</div>
-            <p class="text-[24px] font-bold text-white mt-3">
+            <p class="md:text-[24px] text-lg font-bold text-white mt-3">
               Add your Call to Actions
             </p>
           </div>
@@ -147,7 +157,7 @@
             class="item relative z-20 flex flex-col justify-center items-center text-center"
           >
             <div class="stepnumber">2</div>
-            <p class="text-[24px] font-bold text-white mt-3">
+            <p class="md:text-[24px] text-lg font-bold text-white mt-3">
               Upload your image and video
             </p>
           </div>
@@ -155,7 +165,7 @@
             class="item relative z-20 flex flex-col justify-center items-center text-center"
           >
             <div class="stepnumber">3</div>
-            <p class="text-[24px] font-bold text-white mt-3">
+            <p class="md:text-[24px] text-lg font-bold text-white mt-3">
               Publish and share
             </p>
           </div>
@@ -168,7 +178,7 @@
     <section class="community py-10">
       <div class="container">
         <div class="text-center">
-          <h2 class="text-[32px] text-white font-bold mb-5">
+          <h2 class="md:text-[32px] text-[25px] text-white font-bold mb-5">
             Join the community of creators using Interactive
           </h2>
         </div>
@@ -228,8 +238,8 @@
           />
         </div>
 
-        <div class="lg:w-[35%] p-[64px]">
-          <h3 class="text-[32px] text-white font-bold lh-35">
+        <div class="lg:w-[35%] p-[20px] md:p-[64px]">
+          <h3 class="md:text-[32px] text-[25px] text-white font-bold lh-35">
             Add value to your printed image
           </h3>
 
@@ -249,9 +259,9 @@
 
     <!-- integrate -->
     <section class="integrate py-10">
-      <div class="flex lg:flex-row flex-col justify-between items-center gap-0">
-        <div class="lg:w-[35%] p-[64px]">
-          <h3 class="text-[32px] text-white font-bold lh-35">
+      <div class="flex lg:flex-row flex-col-reverse justify-between items-center gap-0">
+        <div class="lg:w-[35%] p-[20px] md:p-[64px]">
+          <h3 class="text-[25px] md:text-[32px] text-white font-bold lh-35">
             Integrate your platforms
           </h3>
           <p class="text-lg text-white mt-4">
@@ -335,8 +345,8 @@
           />
         </div>
 
-        <div class="lg:w-[35%] p-[64px]">
-          <h3 class="text-[32px] text-white font-bold lh-35">
+        <div class="lg:w-[35%] p-[20px] md:p-[64px]">
+          <h3 class="text-[25px] md:text-[32px] text-white font-bold lh-35">
             Increase Engagement
           </h3>
 
@@ -357,9 +367,9 @@
 
     <!-- track -->
     <section class="track py-10">
-      <div class="flex lg:flex-row flex-col justify-between items-center gap-0">
-        <div class="lg:w-[35%] p-[64px]">
-          <h3 class="text-[32px] text-white font-bold lh-35">Smart Data</h3>
+      <div class="flex lg:flex-row flex-col-reverse justify-between items-center gap-0">
+        <div class="lg:w-[35%] p-[20px] md:p-[64px]">
+          <h3 class="text-[25px] md:text-[32px] text-white font-bold lh-35">Smart Data</h3>
           <p class="text-lg text-white mt-4">
             Engagement activations optimized for length of play, repeat views,
             and mobile device brands, models, operating software, and versions.
@@ -385,41 +395,41 @@
     <section class="why py-10">
       <div class="container">
         <div class="text-center">
-          <h2 class="text-[32px] text-white font-bold mb-5">
+          <h2 class="text-[25px] md:text-[32px] text-white font-bold mb-5">
             Why creators are choosing Interactive
           </h2>
         </div>
 
-        <div class="grid grid-cols-3 gap-[32px]">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-[32px]">
           <div class="item p-[32px] rounded-[16px] bg-[#202020]">
             <img src="./img/ic1.svg" class="icon mb-3" alt="" />
-            <h3 class="text-[24px] font-bold text-white">Easy to set up</h3>
+            <h3 class="text-lg md:text-[24px] font-bold text-white">Easy to set up</h3>
           </div>
           <div class="item p-[32px] rounded-[16px] bg-[#202020]">
             <img src="./img/ic2.svg" class="icon mb-3" alt="" />
-            <h3 class="text-[24px] font-bold text-white">
+            <h3 class="text-lg md:text-[24px] font-bold text-white">
               Highly customizable
             </h3>
           </div>
           <div class="item p-[32px] rounded-[16px] bg-[#202020]">
             <img src="./img/ic3.svg" class="icon mb-3" alt="" />
-            <h3 class="text-[24px] font-bold text-white">
+            <h3 class="text-lg md:text-[24px] font-bold text-white">
               Works with existing images
             </h3>
           </div>
           <div class="item p-[32px] rounded-[16px] bg-[#202020]">
             <img src="./img/ic4.svg" class="icon mb-3" alt="" />
-            <h3 class="text-[24px] font-bold text-white">Advanced analytics</h3>
+            <h3 class="text-lg md:text-[24px] font-bold text-white">Advanced analytics</h3>
           </div>
           <div class="item p-[32px] rounded-[16px] bg-[#202020]">
             <img src="./img/ic5.svg" class="icon mb-3" alt="" />
-            <h3 class="text-[24px] font-bold text-white">
+            <h3 class="text-lg md:text-[24px] font-bold text-white">
               Useful Tech Showcase
             </h3>
           </div>
           <div class="item p-[32px] rounded-[16px] bg-[#202020]">
             <img src="./img/ic6.svg" class="icon mb-3" alt="" />
-            <h3 class="text-[24px] font-bold text-white">
+            <h3 class="text-lg md:text-[24px] font-bold text-white">
               Change Video after print
             </h3>
           </div>
@@ -439,7 +449,7 @@
           </div>
           <div class="right lg:w-1/2 w-full">
             <div class="text-center">
-              <h3 class="text-white text-[24px] font-bold">
+              <h3 class="text-white text-lg md:text-[24px] font-bold">
                 "This feels like Harry Potter in real life and our clients love
                 seeing their videos overlayed on our product packaging.""
               </h3>
@@ -463,11 +473,11 @@
     <section class="partners py-10">
       <div class="container">
         <div class="text-center">
-          <h2 class="text-[32px] text-white font-bold mb-5">
+          <h2 class="text-[25px] md:text-[32px] text-white font-bold mb-5">
             Also trusted by industry leading companies
           </h2>
 
-          <div class="grid grid-cols-4 gap-[32px]">
+          <div class="grid md:grid-cols-4 grid-cols-2 gap-[32px]">
             <div class="logo text-center">
               <img src="./img/l1.png" class="logo-img block mx-auto" alt="" />
             </div>
@@ -497,7 +507,7 @@
       <div class="container">
         <div class="unlock w-[780px] max-w-full mx-auto">
           <div class="text-center">
-            <h2 class="text-[32px] text-white lh-35 font-bold">
+            <h2 class="text-[25px] md:text-[32px] text-white lh-35 font-bold">
               Make your first image Interactive today
             </h2>
 
@@ -521,14 +531,10 @@
     <!-- footer -->
     <footer class="footer py-10">
       <div class="container">
-        <div class="grid grid-cols-6 gap-[32px]">
+        <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-[32px]">
           <div class="item">
             <a href="#">
-              <img
-                src="./img/logo.png"
-                class="logo-main w-[150px]"
-                alt=""
-              />
+              <img src="./img/logo.png" class="logo-main w-[150px]" alt="" />
             </a>
 
             <div class="flex my-4 items-center gap-5">

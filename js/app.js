@@ -25,3 +25,11 @@ const continuousMarquee = document.getElementById("continious-marquee");
 setInterval(() => {
   continuousMarquee.scrollLeft += 1;
 }, 10);
+
+const menuToggler = document.getElementById("menu-toggler");
+const menu = document.getElementById("menu");
+
+menuToggler.addEventListener("click", () => {
+  menuToggler.classList.toggle("active");
+  menu.classList.toggle("active");
+});
