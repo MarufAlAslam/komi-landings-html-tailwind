@@ -150,7 +150,8 @@ h3 {
   background-repeat: no-repeat;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="file"] {
   display: none;
 }
 
