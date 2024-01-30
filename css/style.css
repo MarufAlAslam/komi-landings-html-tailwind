@@ -155,6 +155,31 @@ input[type="file"] {
   display: none;
 }
 
+#product-submenu.active,
+#category-submenu.active {
+  display: flex;
+}
+
+#header-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 10;
+}
+
+nav {
+  position: relative;
+  z-index: 10000;
+}
+
+#header-overlay.active {
+  display: block;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(-5%);
@@ -208,5 +233,25 @@ input[type="file"] {
 
   .header {
     z-index: 1000;
+  }
+
+  #product-item,
+  #category-item {
+    flex-direction: column;
+  }
+
+  #product-submenu.active,
+  #category-submenu.active {
+    display: flex;
+    background: transparent;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  #product-submenu.active a,
+  #category-submenu.active a {
+    color: white;
   }
 }

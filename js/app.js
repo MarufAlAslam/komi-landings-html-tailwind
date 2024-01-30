@@ -5,6 +5,30 @@ window.addEventListener("scroll", () => {
   header.classList.toggle("fixed", window.scrollY > 200);
 });
 
+const productItem = document.getElementById("product-item");
+const productSubmenu = document.getElementById("product-submenu");
+const categoryItem = document.getElementById("category-item");
+const categorySubmenu = document.getElementById("category-submenu");
+const headerOverlay = document.getElementById("header-overlay");
+
+productItem.addEventListener("click", () => {
+  productSubmenu.classList.toggle("active");
+  categorySubmenu.classList.remove("active");
+  headerOverlay.classList.toggle("active");
+});
+
+categoryItem.addEventListener("click", () => {
+  categorySubmenu.classList.toggle("active");
+  productSubmenu.classList.remove("active");
+  headerOverlay.classList.toggle("active");
+});
+
+headerOverlay.addEventListener("click", () => {
+  productSubmenu.classList.remove("active");
+  categorySubmenu.classList.remove("active");
+  headerOverlay.classList.remove("active");
+});
+
 const year = document.getElementById("year");
 year.innerHTML = new Date().getFullYear();
 
