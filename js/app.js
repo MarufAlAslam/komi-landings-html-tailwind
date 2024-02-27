@@ -43,6 +43,35 @@ $(".fade-slider").slick({
   autoplaySpeed: 4000,
 });
 
+$(".continuous-slider").slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  arrows: false,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 5000,
+  cssEase: "linear",
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
+});
+
 const continuousMarquee = document.getElementById("continious-marquee");
 
 // make continious marquee
